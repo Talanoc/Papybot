@@ -1,0 +1,10 @@
+body{
+    margin: 0 auto;
+}
+section.page{
+    background:url("../images/parchemin.jpg");
+    background-size: cover;
+    height: 100vh;
+
+
+}
