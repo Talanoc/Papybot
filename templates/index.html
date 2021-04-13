@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
     <title>Papybot</title>
 
-</script>
-    
-    <style type="text/css">
 
-    /* Always set the map height explicitly to define the size of the div
-    * element that contains the map. */
-    #map {
-        height: 400px;
-        width: 400px;
-    }
-
-    /* Optional: Makes the sample page fill the window. */
-    html,
     
-    </style>
+ 
 <script src="/static/js/index.js"> 
 </script>
-<link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 
     <body>
-        <section class="question">
-          <input type="text" style = "width: 400px;height:20px";id=" ville"; placeholder="De quel endroit voulez-vous que je vous parle" minlength="2">
-          <button>Valider</button><br>
-        
-   </section>   
+      <div id="titrte">
+        <h1>Papybot</h1>
+      </div>
+      
+
+      
+      <div id="entrée">
+             
+              <input  type="text" name="user_question" size="40" id="user_question" placeholder="Que voulez-vous savoir ?">
+              <button onclick="soumettre()">question </button>
+      </div>       
+       <div id="data">
+          <h1>la reponse</h1> 
+       </div>
     </body>
 </html>
