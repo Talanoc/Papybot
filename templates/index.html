@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <title>papybot</title>
+
+
+</head>
+
+<body>
+  
+    <header> 
+        <div id="header" class="row align-items-center" >
+                <img  id="logo" src="static\img\vieux-sage.jpg" class="mr-3 mt-3 rounded-circle" alt="Logo Papybot" >
+                <div id="titre" class="navbar-brand col-auto" >
+                    <h1><span class="custom-brand">PapyBot</span></h1>
+                    <h2><small>Le monde est sa maison!</small></h2>
+                </div>
+               
+                
+        </div>    
+     </header>
+
+     <div><br><br></div>
+
+     <div id="question" class="container">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="user_question" placeholder="Que cherchez vous ?" aria-label="Que voulez-vous savoir ?" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button onclick="soumettre()" type="button" class="btn btn-success">Lancer la recherche</button>
+            </div>    
+        </div>
+    </div>
+    <div id="response_box" >
+   
+    </div>
+</div>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU2RgxyqOca0MhImnfvVW7RgUlcPbiJsE&libraries=&v=weekly"
+        async defer></script>
+
+    <script src="/static/js/index.js"></script>
+</body>
+
+</html>

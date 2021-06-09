@@ -1,0 +1,67 @@
+body{
+  background-image:url("../img/parchemin2.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+
+#header{
+  color:white;
+  height: auto;
+  background-image:url("../img/earth.gif");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+
+#logo
+{
+  width: 200px;
+  position: relative;
+  right: 0px;
+  left: 100px;
+  top:0px;
+  bottom:100px;
+}
+
+#titre{
+  
+  width : 200px;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+#result
+{
+  padding: 0;
+  margin: 0;
+
+}  
+
+#intero
+{
+  width:20px;
+  position: relative;
+  right:10px;
+  top:0;
+}
+  
+#response_box
+{
+ 
+  -ms-flex-align: auto;
+  color:black;
+}
+.wiki
+{
+  height: 100 ;  
+}
+
+.map 
+{   
+  width: auto;
+  height: 350px;
+  margin: 0px;
+  position: relative;
+  }
+
