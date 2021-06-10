@@ -33,7 +33,7 @@ let soumettre = async function () {
       </div>
       <div class="container mt-3">
           <div class="media border p-3">
-              <img src="static/img/vieux-sage.jpg" alt="papybot" class="mr-3 mt-3 rounded-circle" style="width: 60px;" />
+              <img src="static/img/vieux-sage.jpg" alt="papybot" class="mr-3 mt-3 rounded-circle" style="width: 40px;" />
               <div class="media-body">
                   <div id="ville">
                     La ville de ${data.wiki.wiki_title} est très jolie. J'y suis passé il y a fort longtemps.<br>
