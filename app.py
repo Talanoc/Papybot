@@ -28,5 +28,5 @@ def question(user_question):
   return jsonify({"status":"OK" if geo else "error","address":geo[0] if geo else None,"lon":geo[2] if geo else None,"lat":geo[1] if geo else None,"wiki":wiki,"user_question_sw":answer})
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(debug=False)
 
