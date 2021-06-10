@@ -12,7 +12,7 @@ let soumettre = async function () {
   };
   
   let question = document.getElementById('user_question').value;
-  let response = await fetch(`https://talanoc-papybot.herokuapp.com/question/${question}`, myInit);
+  let response = await fetch(`http://localhost:5000/question/${question}`, myInit);
   let data = await response.json();
   console.table(data);
   
