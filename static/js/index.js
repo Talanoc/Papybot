@@ -49,7 +49,7 @@ let soumettre = async function () {
       </div>
       
       `;
-    response_box.innerHTML+=content;
+    response_box.innerHTML = content + response_box.innerHTML;
     new google.maps.Map(document.getElementById(map_id),
     {
       center: { lat:data.lat , lng: data.lon },
