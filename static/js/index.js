@@ -12,8 +12,10 @@ let soumettre = async function () {
   };
   
   let question = document.getElementById('user_question').value;
-  console.table(question);
-  let response = await fetch(`/${question}`, myInit);
+  console.table(question)
+
+
+  let response = await fetch(`https://talanoc-papybot.herokuapp.com/question/${question}`, myInit);
   
   let data = await response.json();
   console.table(data);
