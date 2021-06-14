@@ -13,8 +13,8 @@ let soumettre = async function () {
   
   let question = document.getElementById('user_question').value;
   console.table(question)
-  let response = await fetch(`https://talanoc-papybot.herokuapp.com/${user_question}`, myInit);
-  console.table(response)
+  let response = await fetch(`/${question}`, myInit);
+  
   let data = await response.json();
   console.table(data);
   
