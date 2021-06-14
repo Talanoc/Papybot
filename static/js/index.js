@@ -12,7 +12,7 @@ let soumettre = async function () {
   };
   
   let question = document.getElementById('user_question').value;
-  console.table(question)
+  console.table(question);
   let response = await fetch(`/${question}`, myInit);
   
   let data = await response.json();
