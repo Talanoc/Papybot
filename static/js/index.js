@@ -1,6 +1,4 @@
-
 let nb = 0;
-
 
 let soumettre = async function () {
 
@@ -12,15 +10,11 @@ let soumettre = async function () {
   };
   
   let question = document.getElementById('user_question').value;
-  console.table(question)
-
-
   let response = await fetch(`https://talanoc-papybot.herokuapp.com/question/${question}`, myInit);
-  
   let data = await response.json();
-  console.table(data);
   
- 
+  console.table(data);
+
   if (data.status === "OK" ){
 
     let map_id = `map_${nb}`;
@@ -44,7 +38,6 @@ let soumettre = async function () {
                     Adresse : ${data.address}<br>
                   </div>
                   <div id="response"  >
-                    
                       <div class="map" id="${map_id}"></div>
                       <div class="wiki" id="wiki_text">${data.wiki.wiki_text}</div>
                   </div>

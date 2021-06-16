@@ -14,7 +14,6 @@ class Geocoding:
             'key': os.getenv("GOOGLE_API_KEY"),
             'address':answer
         }
-        print(params)
         base_url = 'https://maps.googleapis.com/maps/api/geocode/json?'
 
         response = requests.get(base_url,params=params).json()
