@@ -45,6 +45,12 @@ body{
   right:10px;
   top:0;
 }
+
+#erreur
+{width:90px;
+  position: relative;
+  right:10px;
+  top:0;}
   
 #response_box
 {

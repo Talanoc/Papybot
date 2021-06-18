@@ -42,7 +42,7 @@ class Geocoding:
             données=(address_format,lat,lon,ville) 
             return données
         else:
-            données=()
-            return None
+            données=(None,0,0,"Truttemer-le-Grand")
+            return données
            
     

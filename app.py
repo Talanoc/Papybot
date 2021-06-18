@@ -19,6 +19,7 @@ def question(user_question):
   geo=Geocoding.data_geocoding(answer)
   ville=(geo[3])
   wiki=Wiki.wiki_story(ville) 
+  
   return jsonify({"status":"OK" if geo else "error","address":geo[0] if geo else None,"lon":geo[2] if geo else None,"lat":geo[1] if geo else None,"wiki":wiki,"user_question_sw":answer})
 
 if __name__=='__main__':
