@@ -31,7 +31,7 @@
 
     <div id="question" class="container">
         <div class="input-group mb-3">
-            <input type="text" class="form-control" id="user_question" placeholder="Que cherchez vous ?" >
+            <input type="text" class="form-control" id="user_question" placeholder="Que cherchez vous ?" onfocus="if(this.value != '')this.value = '';" >
             <div class="input-group-append">
                 <button onclick="soumettre()" type="button" class="btn btn-success">Lancer la recherche</button>
             </div>    
