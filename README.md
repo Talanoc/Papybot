@@ -2,15 +2,15 @@
 
 ## I. Description
 
-Ce programme a pour but de créer un bot capable de répondre à une question d'un utilisateur .
+Ce programme a pour but de créer un bot capable de répondre à une question d'un utilisateur.
 L'application est basée sur l'API Wikipedia et de l'API Google.
-Cette application permet d'afficher une adresse,une carte et des informations générales sur cette ville.
+Cette application permet d'afficher une adresse, une carte et des informations générales sur cette ville.
 
-## II.Hébergemant de l'application
+## II. Hébergement de l'application
 
 Adresse de l'application : `https://talanoc-papybot.herokuapp.com/`.
 
-## III.Fonctionnement de l'application
+## III. Fonctionnement de l'application
 
 -lancement de l'application.
 -entrée d'une demande ("je cherche une boulangerie à rouen" par exemple)
@@ -20,7 +20,7 @@ Adresse de l'application : `https://talanoc-papybot.herokuapp.com/`.
 -passage de la donnée ville dans l'API Wikipedia pour obtenir une description succinte de la ville.
 -affichage de la réponse dans la page html.
 
-## IV.Requirements
+## IV. Requirements
 
 -Python 3.9.5
 -Flask
