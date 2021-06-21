@@ -33,16 +33,16 @@ class Geocoding:
             lat = geometry['location']['lat']
             lon = geometry['location']['lng']
             address_format=response['results'][0]['formatted_address']
-            addresse_components=response['results'][0]['address_components']
+            addresse_components = response['results'][0]['address_components']
             
             for elt in addresse_components:
                 if (elt['types'][0]) == ('locality'):
-                    ville=(elt['long_name'])
+                    ville = (elt['long_name'])
 
-            données=(address_format,lat,lon,ville) 
+            données = (address_format,lat,lon,ville) 
             return données
         else:
-            données=(None,0,0,"Truttemer-le-Grand")
+            données = (None,0,0,"Truttemer-le-Grand")
             return données
            
     

@@ -16,8 +16,8 @@ def test_response_parsing():
     assert Geocoding.response_parsing(response) == ('1 Rue Georges Fauvel, 14500 Vire, France', 48.8391659, -0.8820916999999999, 'Vire')
  
 def test_wiki_story():
-    mock_wiki='mock_wiki.json'
+    mock_wiki = 'mock_wiki.json'
     with open(mock_wiki) as json_file:
-        response=json.load(json_file)
+        response = json.load(json_file)
         
-    assert Wiki.wiki_data(response)== {'wiki_title': 'Naveil', 'wiki_text': 'Naveil est une commune franÃ§aise situÃ©e dans le dÃ©partement de Loir-et-Cher, en rÃ©gion Centre-Val de Loire.'}
+    assert Wiki.wiki_data(response) == {'wiki_title': 'Naveil', 'wiki_text': 'Naveil est une commune franÃ§aise situÃ©e dans le dÃ©partement de Loir-et-Cher, en rÃ©gion Centre-Val de Loire.'}

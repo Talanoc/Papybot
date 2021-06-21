@@ -15,7 +15,7 @@ class Wiki:
             response = requests.get(url_wiki).json()
             return Wiki.wiki_data(response)
         except:
-            url_wiki =("https://fr.wikipedia.org/api/rest_v1/page/summary/vire" )
+            url_wiki = ("https://fr.wikipedia.org/api/rest_v1/page/summary/vire" )
             response = requests.get(url_wiki).json()
             return Wiki.wiki_data(response)
         
